@@ -41,7 +41,7 @@
 					</div>
 					<!-- /.card-header -->
 					<!-- form start -->
-					<form role="form" action="<?php echo base_url();?>">
+					<form role="form" action="<?php echo base_url();?>Assesor/index">
 						<div class="card-body">
 							<div class="form-group">
 								<label for="exampleInputEmail1">Username </label>
