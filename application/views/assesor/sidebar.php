@@ -24,29 +24,37 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-		  	<li class="nav-item">
-				<a href="<?php echo base_url()?>" class="nav-link">
-					<i class="far fa-circle nav-icon"></i>
-					<p>Beranda</p>
-				</a>
-			</li>
-		  </li>
-		  <li class="nav-item">
-		  	<li class="nav-item">
-				<a href="<?php echo base_url()?>DataUser/index" class="nav-link">
-					<i class="far fa-circle nav-icon"></i>
-					<p>Data User</p>
-				</a>
-			</li>
-		  </li>
-		  <li class="nav-item">
-		  	<li class="nav-item">
-				<a href="./index.html" class="nav-link">
-					<i class="far fa-circle nav-icon"></i>
-					<p>Data Tahanan</p>
-				</a>
-			</li>
-		  </li>
+						<li class="nav-item">
+							<a href="<?php echo base_url()?>Assesor/index" class="nav-link">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Beranda</p>
+							</a>
+						</li>
+					</li>
+					<li class="nav-item">
+						<li class="nav-item">
+							<a href="<?php echo base_url()?>Assesor/assesment" class="nav-link">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Assesment</p>
+							</a>
+						</li>
+					</li>
+					<li class="nav-item">
+						<li class="nav-item">
+							<a href="<?php echo base_url()?>Assesor/laporan" class="nav-link">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Laporan</p>
+							</a>
+						</li>
+					</li>
+					<li class="nav-item">
+						<li class="nav-item">
+							<a href="<?php echo base_url()?>Assesor/grafik" class="nav-link">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Grafik</p>
+							</a>
+						</li>
+					</li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
