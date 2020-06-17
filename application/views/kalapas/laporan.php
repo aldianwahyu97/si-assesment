@@ -23,11 +23,11 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Beranda</h1>
+            <h1 class="m-0 text-dark">Laporan</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item active">Beranda</li>
+              <li class="breadcrumb-item active">Laporan</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -38,58 +38,86 @@
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
+		
         <!-- Small boxes (Stat box) -->
+        <div class="row" style="padding-bottom: 15px;">
+          <div class="col-12">
+		  	<div class="dropdown">
+				<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Bulan
+				</button>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					<a class="dropdown-item" href="#">Januari</a>
+					<a class="dropdown-item" href="#">Februari</a>
+					<a class="dropdown-item" href="#">Maret</a>
+					<a class="dropdown-item" href="#">April</a>
+					<a class="dropdown-item" href="#">Mei</a>
+					<a class="dropdown-item" href="#">Juni</a>
+					<a class="dropdown-item" href="#">Juli</a>
+					<a class="dropdown-item" href="#">Agustus</a>
+					<a class="dropdown-item" href="#">September</a>
+					<a class="dropdown-item" href="#">Oktober</a>
+					<a class="dropdown-item" href="#">November</a>
+					<a class="dropdown-item" href="#">Desember</a>
+				</div>
+				<button class="btn btn-primary">Cetak</button>
+			</div>
+		  </div>
+		</div>
+		
         <div class="row">
-          <div class="col-lg-6 col-12">
-            <!-- small box -->
-            <div class="small-box bg-info">
-              <div class="inner" style="text-align:center;">
-                <h3>150</h3>
+			<div class="col-12">
+				<div class="card">
+				<div class="card-header">
+					<h3 class="card-title">Laporan</h3>
 
-                <p><b>Data User</b></p>
-              </div>
-              <!-- <div class="icon">
-                <i class="ion ion-bag"></i>
-              </div> -->
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <!-- ./col -->
-          <div class="col-lg-6 col-12">
-            <!-- small box -->
-            <div class="small-box bg-success">
-              <div class="inner" style="text-align:center;">
-                <h3>53</h3>
+					<div class="card-tools">
+					<div class="input-group input-group-sm" style="width: 150px;">
+						<input type="text" name="table_search" class="form-control float-right" placeholder="Search">
 
-                <p><b>Data Tahanan</b></p>
-              </div>
-              <!-- <div class="icon">
-                <i class="ion ion-stats-bars"></i>
-              </div> -->
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <!-- ./col -->
-          
-          <!-- ./col -->
-          
-          <!-- ./col -->
+						<div class="input-group-append">
+						<button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>
+						</div>
+					</div>
+					</div>
+				</div>
+				<!-- /.card-header -->
+				<div class="card-body table-responsive p-0">
+					<table class="table table-hover text-nowrap">
+					<thead>
+						<tr>
+						<th>Nomor</th>
+						<th>Nomor Registrasi</th>
+						<th>Nama Tahanan</th>
+						<th>Hasil</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>12345678</td>
+							<td>Rival Biasrori</td>
+							<td>Berat</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>12345678</td>
+							<td>Anggin Risna Widianingsih</td>
+							<td>Berat</td>
+						</tr>
+					</tbody>
+					</table>
+				</div>
+				<!-- /.card-body -->
+				</div>
+				<!-- /.card -->
+			</div>
         </div>
-        <!-- /.row -->
-        <!-- Main row -->
-        <div class="row">
-          <!-- Left col -->
-          
-          <!-- /.Left col -->
-          <!-- right col (We are only adding the ID to make the widgets sortable)-->
-          
-          <!-- right col -->
-        </div>
-        <!-- /.row (main row) -->
+        
       </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
-  </div>
+	</div>
   <!-- /.content-wrapper -->
   <?php 
 	require_once("footer.php");

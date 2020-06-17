@@ -23,11 +23,11 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Beranda</h1>
+            <h1 class="m-0 text-dark">Profile</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item active">Beranda</li>
+              <li class="breadcrumb-item active">Profile</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -40,57 +40,39 @@
       <div class="container-fluid">
         <!-- Small boxes (Stat box) -->
         <div class="row">
-          <div class="col-lg-6 col-12">
-            <!-- small box -->
-            <div class="small-box bg-info">
-              <div class="inner" style="text-align:center;">
-                <h3>150</h3>
-
-                <p><b>Data User</b></p>
-              </div>
-              <!-- <div class="icon">
-                <i class="ion ion-bag"></i>
-              </div> -->
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <!-- ./col -->
-          <div class="col-lg-6 col-12">
-            <!-- small box -->
-            <div class="small-box bg-success">
-              <div class="inner" style="text-align:center;">
-                <h3>53</h3>
-
-                <p><b>Data Tahanan</b></p>
-              </div>
-              <!-- <div class="icon">
-                <i class="ion ion-stats-bars"></i>
-              </div> -->
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <!-- ./col -->
-          
-          <!-- ./col -->
-          
-          <!-- ./col -->
+          <div class="col-12">
+		  	<div class="card">
+				<div class="card-header">
+					Pengaturan Profile
+				</div>
+				<div class="card-body">
+					<form>
+						<div class="form-group">
+							<label for="username">Username</label>
+							<input type="text" class="form-control" id="username" aria-describedby="emailHelp" placeholder="Masukkan Username">
+						</div>
+						<div class="form-group">
+							<label for="nip">NIP</label>
+							<input type="number" class="form-control" id="nip" aria-describedby="emailHelp" placeholder="Masukkan NIP">
+						</div>
+						<div class="form-group">
+							<label for="password_lama">Password Lama</label>
+							<input type="password" class="form-control" id="password_lama" placeholder="Masukkan Password Lama">
+						</div>
+						<div class="form-group">
+							<label for="password_baru">Password Baru</label>
+							<input type="password" class="form-control" id="password_baru" placeholder="Masukkan Password Baru">
+						</div>
+						<button type="submit" class="btn btn-primary">Simpan</button>
+					</form>
+				</div>
+			</div>
+		  </div>
         </div>
-        <!-- /.row -->
-        <!-- Main row -->
-        <div class="row">
-          <!-- Left col -->
-          
-          <!-- /.Left col -->
-          <!-- right col (We are only adding the ID to make the widgets sortable)-->
-          
-          <!-- right col -->
-        </div>
-        <!-- /.row (main row) -->
-      </div><!-- /.container-fluid -->
+        
+      </div>
     </section>
-    <!-- /.content -->
   </div>
-  <!-- /.content-wrapper -->
   <?php 
 	require_once("footer.php");
   ?>

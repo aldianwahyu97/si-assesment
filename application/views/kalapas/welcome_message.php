@@ -23,11 +23,11 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Data User</h1>
+            <h1 class="m-0 text-dark">Beranda</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-							<li class="breadcrumb-item active">Data User</li>
+              <li class="breadcrumb-item active">Beranda</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -38,73 +38,42 @@
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
-		<div class="row" style="padding-bottom: 10px;">
-			<div class="col-12">
-				<button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#modal-addDataUser">Tambah User</button>
-			</div>
-		</div>
         <!-- Small boxes (Stat box) -->
         <div class="row">
-          <div class="col-12">
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">Data User</h3>
+          <div class="col-lg-6 col-12">
+            <!-- small box -->
+            <div class="small-box bg-info">
+              <div class="inner" style="text-align:center;">
+                <h3>150</h3>
 
-                <div class="card-tools">
-                  <div class="input-group input-group-sm" style="width: 150px;">
-                    <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
-
-                    <div class="input-group-append">
-                      <button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>
-                    </div>
-                  </div>
-                </div>
+                <p><b>Jumlah Asesor</b></p>
               </div>
-              <!-- /.card-header -->
-              <div class="card-body table-responsive p-0">
-                <table class="table table-hover text-nowrap">
-                  <thead>
-                    <tr>
-                      <th>NIP</th>
-                      <th>Nama</th>
-                      <th>Level</th>
-                      <th>Aksi</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>183</td>
-                      <td>Aldian Wahyu Septiadi</td>
-                      <td>Kepala</td>
-                      <td>
-												<button type="submit" class="btn btn-success" data-toggle="modal" data-target="#modal-editDataUser">
-													<i class="far fa-edit nav-icon"></i>
-												</button>
-												<button type="submit" class="btn btn-danger" data-toggle="modal" data-target="#modal-deleteDataUser">
-													<i class="far fa-window-close nav-icon"></i>
-												</button>
-											</td>
-                    </tr>
-                    <tr>
-											<td>184</td>
-																	<td>Anggin Risna Widianingsih</td>
-																	<td>Sekretaris</td>
-																	<td>
-												<button type="submit" class="btn btn-success" data-toggle="modal" data-target="#modal-editDataUser">
-													<i class="far fa-edit nav-icon"></i>
-												</button>
-												<button type="submit" class="btn btn-danger" data-toggle="modal" data-target="#modal-deleteDataUser">
-													<i class="far fa-window-close nav-icon"></i>
-												</button>
-												</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!-- /.card-body -->
+              <!-- <div class="icon">
+                <i class="ion ion-bag"></i>
+              </div> -->
+              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
-            <!-- /.card -->
           </div>
+          <!-- ./col -->
+          <div class="col-lg-6 col-12">
+            <!-- small box -->
+            <div class="small-box bg-success">
+              <div class="inner" style="text-align:center;">
+                <h3>53</h3>
+
+                <p><b>Jumlah Tahanan</b></p>
+              </div>
+              <!-- <div class="icon">
+                <i class="ion ion-stats-bars"></i>
+              </div> -->
+              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <!-- ./col -->
+          
+          <!-- ./col -->
+          
+          <!-- ./col -->
         </div>
         <!-- /.row -->
         <!-- Main row -->
@@ -117,22 +86,7 @@
           <!-- right col -->
         </div>
         <!-- /.row (main row) -->
-			</div><!-- /.container-fluid -->
-			
-			<!-- Modal Add -->
-			<?php 
-				require_once('add_data_user.php');
-			?>
-
-			<!-- Modal Edit -->
-			<?php 
-				require_once('edit_data_user.php');
-			?>
-
-			<!-- Modal Delete -->
-			<?php 
-				require_once('confirm_delete_user.php');
-			?>
+      </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
   </div>

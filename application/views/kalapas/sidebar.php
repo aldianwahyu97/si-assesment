@@ -25,7 +25,7 @@
                with font-awesome or any other icon font library -->
           <li class="nav-item">
 		  	<li class="nav-item">
-				<a href="<?php echo base_url()?>Admin/index" class="nav-link">
+				<a href="<?php echo base_url()?>Kalapas/index" class="nav-link">
 					<i class="far fa-circle nav-icon"></i>
 					<p>Beranda</p>
 				</a>
@@ -33,17 +33,33 @@
 		  </li>
 		  <li class="nav-item">
 		  	<li class="nav-item">
-				<a href="<?php echo base_url()?>Admin/dataUser" class="nav-link">
+				<a href="<?php echo base_url()?>Kalapas/dataAssesor" class="nav-link">
 					<i class="far fa-circle nav-icon"></i>
-					<p>Data User</p>
+					<p>Data Asesor</p>
 				</a>
 			</li>
 		  </li>
 		  <li class="nav-item">
 		  	<li class="nav-item">
-				<a href="<?php echo base_url()?>Admin/dataTahanan" class="nav-link">
+				<a href="<?php echo base_url()?>Kalapas/dataTahanan" class="nav-link">
 					<i class="far fa-circle nav-icon"></i>
 					<p>Data Tahanan</p>
+				</a>
+			</li>
+			</li>
+			<li class="nav-item">
+		  	<li class="nav-item">
+				<a href="<?php echo base_url()?>Kalapas/laporan" class="nav-link">
+					<i class="far fa-circle nav-icon"></i>
+					<p>Laporan</p>
+				</a>
+			</li>
+			</li>
+			<li class="nav-item">
+		  	<li class="nav-item">
+				<a href="<?php echo base_url()?>Kalapas/grafik" class="nav-link">
+					<i class="far fa-circle nav-icon"></i>
+					<p>Grafik</p>
 				</a>
 			</li>
 		  </li>

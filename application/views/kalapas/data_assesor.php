@@ -23,11 +23,11 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Data User</h1>
+            <h1 class="m-0 text-dark">Data Assesor</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-							<li class="breadcrumb-item active">Data User</li>
+				<li class="breadcrumb-item active">Data Assesor</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -38,17 +38,12 @@
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
-		<div class="row" style="padding-bottom: 10px;">
-			<div class="col-12">
-				<button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#modal-addDataUser">Tambah User</button>
-			</div>
-		</div>
         <!-- Small boxes (Stat box) -->
         <div class="row">
           <div class="col-12">
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Data User</h3>
+                <h3 class="card-title">Data Assesor</h3>
 
                 <div class="card-tools">
                   <div class="input-group input-group-sm" style="width: 150px;">
@@ -67,36 +62,16 @@
                     <tr>
                       <th>NIP</th>
                       <th>Nama</th>
-                      <th>Level</th>
-                      <th>Aksi</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td>183</td>
                       <td>Aldian Wahyu Septiadi</td>
-                      <td>Kepala</td>
-                      <td>
-												<button type="submit" class="btn btn-success" data-toggle="modal" data-target="#modal-editDataUser">
-													<i class="far fa-edit nav-icon"></i>
-												</button>
-												<button type="submit" class="btn btn-danger" data-toggle="modal" data-target="#modal-deleteDataUser">
-													<i class="far fa-window-close nav-icon"></i>
-												</button>
-											</td>
                     </tr>
                     <tr>
-											<td>184</td>
-																	<td>Anggin Risna Widianingsih</td>
-																	<td>Sekretaris</td>
-																	<td>
-												<button type="submit" class="btn btn-success" data-toggle="modal" data-target="#modal-editDataUser">
-													<i class="far fa-edit nav-icon"></i>
-												</button>
-												<button type="submit" class="btn btn-danger" data-toggle="modal" data-target="#modal-deleteDataUser">
-													<i class="far fa-window-close nav-icon"></i>
-												</button>
-												</td>
+						<td>184</td>
+						<td>Anggin Risna Widianingsih</td>
                     </tr>
                   </tbody>
                 </table>
@@ -117,22 +92,7 @@
           <!-- right col -->
         </div>
         <!-- /.row (main row) -->
-			</div><!-- /.container-fluid -->
-			
-			<!-- Modal Add -->
-			<?php 
-				require_once('add_data_user.php');
-			?>
-
-			<!-- Modal Edit -->
-			<?php 
-				require_once('edit_data_user.php');
-			?>
-
-			<!-- Modal Delete -->
-			<?php 
-				require_once('confirm_delete_user.php');
-			?>
+		</div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
   </div>

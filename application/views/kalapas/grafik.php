@@ -23,11 +23,11 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Beranda</h1>
+            <h1 class="m-0 text-dark">Grafik</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item active">Beranda</li>
+              <li class="breadcrumb-item active">Grafik</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -38,59 +38,25 @@
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
-        <!-- Small boxes (Stat box) -->
         <div class="row">
-          <div class="col-lg-6 col-12">
-            <!-- small box -->
-            <div class="small-box bg-info">
-              <div class="inner" style="text-align:center;">
-                <h3>150</h3>
-
-                <p><b>Data User</b></p>
-              </div>
-              <!-- <div class="icon">
-                <i class="ion ion-bag"></i>
-              </div> -->
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <!-- ./col -->
-          <div class="col-lg-6 col-12">
-            <!-- small box -->
-            <div class="small-box bg-success">
-              <div class="inner" style="text-align:center;">
-                <h3>53</h3>
-
-                <p><b>Data Tahanan</b></p>
-              </div>
-              <!-- <div class="icon">
-                <i class="ion ion-stats-bars"></i>
-              </div> -->
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <!-- ./col -->
-          
-          <!-- ./col -->
-          
-          <!-- ./col -->
+					<div class="col-4"></div>
+					<div class="col-4">
+						<canvas id="grafik" width="400" height="400"></canvas>
+						<p>&nbsp;</p>
+						<p style="text-align: center;">Grafik Klasifikasi Tahanan Per tahun (2019)</p>
+					</div>
+					<div class="col-4"></div>
         </div>
-        <!-- /.row -->
-        <!-- Main row -->
+        
         <div class="row">
-          <!-- Left col -->
           
-          <!-- /.Left col -->
-          <!-- right col (We are only adding the ID to make the widgets sortable)-->
-          
-          <!-- right col -->
         </div>
-        <!-- /.row (main row) -->
-      </div><!-- /.container-fluid -->
+
+      </div>
     </section>
-    <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
+    
+	</div>
+ 
   <?php 
 	require_once("footer.php");
   ?>
@@ -102,7 +68,6 @@
   <!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->
-
 <!-- jQuery -->
 <script src="<?php echo base_url();?>assets/plugins/jquery/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
@@ -137,5 +102,61 @@
 <script src="<?php echo base_url();?>assets/dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="<?php echo base_url();?>assets/dist/js/demo.js"></script>
+<script>
+	var ctx = document.getElementById('grafik').getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni','Juli','Agustus','September','Oktober','November','Desember'],
+        datasets: [{
+            label: 'Hasil Klasfikasi',
+            data: [12, 19, 3, 5, 2, 3, 12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+								'rgba(255, 159, 64, 0.2)',
+								'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+								'rgba(255, 159, 64, 0.2)',
+								'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)',
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+								'rgba(255, 159, 64, 1)',
+								'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+								'rgba(255, 159, 64, 1)',
+								'rgba(153, 102, 255, 1)',
+								'rgba(255, 159, 64, 1)',
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+
+</script>
 </body>
 </html>
